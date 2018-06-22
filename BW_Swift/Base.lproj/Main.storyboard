@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="BW_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCg-zA-ezL">
+                                <rect key="frame" x="132.5" y="100" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="5q8-x2-rb1"/>
+                                    <constraint firstAttribute="width" constant="110" id="AIg-jf-Rkw"/>
+                                </constraints>
+                                <state key="normal" image="image_login_logo"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uW8-dB-CS6">
+                                <rect key="frame" x="0.0" y="220" width="375" height="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号码" minimumFontSize="17" background="textfield_login_normal" translatesAutoresizingMaskIntoConstraints="NO" id="fCU-hW-g2F">
+                                <rect key="frame" x="28" y="251" width="319" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="uXo-J0-77h"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer." value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" background="textfield_login_normal" translatesAutoresizingMaskIntoConstraints="NO" id="oBd-4j-Hm5">
+                                <rect key="frame" x="28" y="306" width="319" height="45"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fCU-hW-g2F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="05U-0C-gAb"/>
+                            <constraint firstItem="fCU-hW-g2F" firstAttribute="top" secondItem="uW8-dB-CS6" secondAttribute="bottom" constant="15" id="1wW-LN-2xv"/>
+                            <constraint firstItem="uW8-dB-CS6" firstAttribute="top" secondItem="NCg-zA-ezL" secondAttribute="bottom" constant="10" id="CtU-FB-qff"/>
+                            <constraint firstItem="oBd-4j-Hm5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="IBK-sH-E7i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fCU-hW-g2F" secondAttribute="trailing" constant="28" id="ROv-qC-ABQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uW8-dB-CS6" secondAttribute="trailing" id="ddh-Vl-9QL"/>
+                            <constraint firstItem="oBd-4j-Hm5" firstAttribute="top" secondItem="fCU-hW-g2F" secondAttribute="bottom" constant="10" id="dzD-oD-fXy"/>
+                            <constraint firstItem="fCU-hW-g2F" firstAttribute="height" secondItem="oBd-4j-Hm5" secondAttribute="height" id="mx2-v9-89t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oBd-4j-Hm5" secondAttribute="trailing" constant="28" id="qo7-gL-0Q5"/>
+                            <constraint firstItem="NCg-zA-ezL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="twZ-SI-iEk"/>
+                            <constraint firstItem="NCg-zA-ezL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="uoJ-6t-4CT"/>
+                            <constraint firstItem="uW8-dB-CS6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yNC-1m-JfC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="address" destination="uW8-dB-CS6" id="j45-1v-THX"/>
+                        <outlet property="passwordTextField" destination="oBd-4j-Hm5" id="mLt-Mm-O6Y"/>
+                        <outlet property="phoneNumberTextField" destination="fCU-hW-g2F" id="gMD-I5-q63"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image_login_logo" width="110" height="110"/>
+        <image name="textfield_login_normal" width="271" height="51"/>
+    </resources>
+</document>
