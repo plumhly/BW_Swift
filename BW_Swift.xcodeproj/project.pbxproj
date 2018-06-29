@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		385C076720E0F01200AA30ED /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385C076620E0F01200AA30ED /* UIColor+Hex.swift */; };
 		38F0FCCD20DBAE3C001CAAE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F0FCCC20DBAE3C001CAAE2 /* AppDelegate.swift */; };
 		38F0FCCF20DBAE3C001CAAE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F0FCCE20DBAE3C001CAAE2 /* ViewController.swift */; };
 		38F0FCD220DBAE3C001CAAE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F0FCD020DBAE3C001CAAE2 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		385C076620E0F01200AA30ED /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		38F0FCC920DBAE3C001CAAE2 /* BW_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BW_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38F0FCCC20DBAE3C001CAAE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38F0FCCE20DBAE3C001CAAE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,9 +41,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		385C076420E0EFCE00AA30ED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				385C076620E0F01200AA30ED /* UIColor+Hex.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		38F0FCC020DBAE3C001CAAE2 = {
 			isa = PBXGroup;
 			children = (
+				385C076420E0EFCE00AA30ED /* Extension */,
 				38F0FCCB20DBAE3C001CAAE2 /* BW_Swift */,
 				38F0FCCA20DBAE3C001CAAE2 /* Products */,
 			);
@@ -102,6 +113,7 @@
 				TargetAttributes = {
 					38F0FCC820DBAE3C001CAAE2 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -145,6 +157,7 @@
 				38F0FCE220DBB476001CAAE2 /* BaseViewController.swift in Sources */,
 				38F0FCCF20DBAE3C001CAAE2 /* ViewController.swift in Sources */,
 				38F0FCCD20DBAE3C001CAAE2 /* AppDelegate.swift in Sources */,
+				385C076720E0F01200AA30ED /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R86UW7Z2FX;
 				INFOPLIST_FILE = BW_Swift/Info.plist;
@@ -297,6 +311,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "df.BW-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R86UW7Z2FX;
 				INFOPLIST_FILE = BW_Swift/Info.plist;
